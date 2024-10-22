@@ -1,3 +1,5 @@
+import "./home.css";
+
 const content = document.querySelector("#content");
 
 export function home() { content.innerHTML = `
@@ -28,7 +30,6 @@ export function home() { content.innerHTML = `
                 <div class="bottom-container-header">Location</div>
                 <div class="location">Jon's house 123, Jon's Land, Jon's country</div>
             </div>
-        </div>
     `
 }
 
