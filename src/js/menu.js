@@ -1,16 +1,16 @@
-import "./menu.css";
+import "../css/menu.css";
 
 // import Images
-import waterImage from "./images/water.webp";
-import fizzyWaterImage from "./images/fizzy_water.webp";
-import coffeeImage from "./images/coffee.webp";
-import saladImage from "./images/salad.webp";
-import riceImage from "./images/rice.webp";
-import eggsImage from "./images/poached_eggs.jpeg";
-import pastaImage from "./images/prawn_pasta.jpeg";
-import wrapsImage from "./images/wraps.webp";
-import vitelImage from "./images/vitel_tone.jpg";
-import gelatoImage from "./images/gelato.webp";
+import waterImage from "../images/water.webp";
+import fizzyWaterImage from "../images/fizzy_water.webp";
+import coffeeImage from "../images/coffee.webp";
+import saladImage from "../images/salad.webp";
+import riceImage from "../images/rice.webp";
+import eggsImage from "../images/poached_eggs.jpeg";
+import pastaImage from "../images/prawn_pasta.jpeg";
+import wrapsImage from "../images/wraps.webp";
+import vitelImage from "../images/vitel_tone.jpg";
+import gelatoImage from "../images/gelato.webp";
 
 const content = document.querySelector("#content");
 

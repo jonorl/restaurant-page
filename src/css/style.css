@@ -17,7 +17,7 @@ body::before {
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
     ),
-    url(./images/cafe3.jpeg);  /*image credit to Julie Aagaard https://www.pexels.com/@julieaagaard/ */
+    url(../images/cafe3.jpeg);  /*image credit to Julie Aagaard https://www.pexels.com/@julieaagaard/ */
   background-size: cover;
   background-attachment: fixed;
   filter: blur(2px);
