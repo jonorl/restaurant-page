@@ -1,25 +1,23 @@
 import "../css/style.css";
+import { home } from "./home.js"
+import { menu } from "./menu.js"
+import { about } from "./about.js"
+
 
 const homeButton = document.querySelector("#home")
 const menuButton = document.querySelector("#menu")
 const aboutButton = document.querySelector("#about")
 
 homeButton.addEventListener("click", () => {
-    import("./home.js").then(module => {
-        module.home();
-    });
+    home();
 });
 
 menuButton.addEventListener("click", () => {
-    import("./menu.js").then(module => {
-        module.menu();
-    });
+    menu();
 });
 
 aboutButton.addEventListener("click", () => {
-    import("./about.js").then(module => {
-        module.about();
-    });
+    about();
 });
 
 console.log("hello restaurant")
