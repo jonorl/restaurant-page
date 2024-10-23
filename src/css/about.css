@@ -10,6 +10,8 @@
 
 .about-us {
     margin: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact1-details, .contact2-details {
