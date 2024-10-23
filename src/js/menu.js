@@ -1,41 +1,5 @@
 import "../css/menu.css";
-
-// import Images
-import waterImage from "../images/water.webp";
-import fizzyWaterImage from "../images/fizzy_water.webp";
-import coffeeImage from "../images/coffee.webp";
-import saladImage from "../images/salad.webp";
-import riceImage from "../images/rice.webp";
-import eggsImage from "../images/poached_eggs.jpeg";
-import pastaImage from "../images/prawn_pasta.jpeg";
-import wrapsImage from "../images/wraps.webp";
-import vitelImage from "../images/vitel_tone.jpg";
-import gelatoImage from "../images/gelato.webp";
-
-const content = document.querySelector("#content");
-
-// Image selections
-const water = document.createElement("img");
-const fizzyWater = document.createElement("img");
-const coffee = document.createElement("img");
-const salad = document.createElement("img");
-const rice = document.createElement("img");
-const eggs = document.createElement("img");
-const pasta = document.createElement("img");
-const wraps = document.createElement("img");
-const vitel = document.createElement("img");
-const gelato = document.createElement("img");
-
-water.src = waterImage;
-fizzyWater.src = fizzyWaterImage;
-coffee.src = coffeeImage;
-salad.src = saladImage;
-rice.src = riceImage;
-eggs.src = eggsImage;
-pasta.src = pastaImage;
-wraps.src = wrapsImage;
-vitel.src = vitelImage;
-gelato.src = gelatoImage;
+import { menuImages } from "./menuImages.js";
 
 export function menu() {
     // Clear previous content
@@ -74,7 +38,7 @@ export function menu() {
     beverageOnePrice.textContent = "Free";
     beverageOne.appendChild(beverageOnePrice);
 
-    const beverageOneImage = water;
+    const beverageOneImage = menuImages.water;
     beverageOneImage.classList.add("menu-img");
     beverageOne.appendChild(beverageOneImage);
 
@@ -99,7 +63,7 @@ export function menu() {
     beverageTwoPrice.textContent = "£2";
     beverageTwo.appendChild(beverageTwoPrice);
 
-    const beverageTwoImage = fizzyWater;
+    const beverageTwoImage = menuImages.fizzyWater;
     beverageTwoImage.classList.add("menu-img");
     beverageTwo.appendChild(beverageTwoImage);
 
@@ -124,7 +88,7 @@ export function menu() {
     beverageThreePrice.textContent = "£3";
     beverageThree.appendChild(beverageThreePrice);
 
-    const beverageThreeImage = coffee;
+    const beverageThreeImage = menuImages.coffee;
     beverageThreeImage.classList.add("menu-img");
     beverageThree.appendChild(beverageThreeImage);
 
@@ -160,7 +124,7 @@ export function menu() {
     sidesOnePrice.textContent = "£8";
     sidesOne.appendChild(sidesOnePrice);
 
-    const sidesOneImage = salad;
+    const sidesOneImage = menuImages.salad;
     sidesOneImage.classList.add("menu-img");
     sidesOne.appendChild(sidesOneImage);
 
@@ -185,7 +149,7 @@ export function menu() {
     sidesTwoPrice.textContent = "£6";
     sidesTwo.appendChild(sidesTwoPrice);
 
-    const sidesTwoImage = rice;
+    const sidesTwoImage = menuImages.rice;
     sidesTwoImage.classList.add("menu-img");
     sidesTwo.appendChild(sidesTwoImage);
 
@@ -221,7 +185,7 @@ export function menu() {
     mainsOnePrice.textContent = "£14";
     mainsOne.appendChild(mainsOnePrice);
 
-    const mainsOneImage = eggs;
+    const mainsOneImage = menuImages.eggs;
     mainsOneImage.classList.add("menu-img");
     mainsOne.appendChild(mainsOneImage);
 
@@ -246,7 +210,7 @@ export function menu() {
     mainsTwoPrice.textContent = "£16";
     mainsTwo.appendChild(mainsTwoPrice);
 
-    const mainsTwoImage = pasta;
+    const mainsTwoImage = menuImages.pasta;
     mainsTwoImage.classList.add("menu-img");
     mainsTwo.appendChild(mainsTwoImage);
 
@@ -271,7 +235,7 @@ export function menu() {
     mainsThreePrice.textContent = "£18";
     mainsThree.appendChild(mainsThreePrice);
 
-    const mainsThreeImage = wraps;
+    const mainsThreeImage = menuImages.wraps;
     mainsThreeImage.classList.add("menu-img");
     mainsThree.appendChild(mainsThreeImage);
 
@@ -296,7 +260,7 @@ export function menu() {
     mainsFourPrice.textContent = "£16";
     mainsFour.appendChild(mainsFourPrice);
 
-    const mainsFourImage = vitel;
+    const mainsFourImage = menuImages.vitel;
     mainsFourImage.classList.add("menu-img");
     mainsFour.appendChild(mainsFourImage);
 
@@ -332,7 +296,7 @@ export function menu() {
     dessertOnePrice.textContent = "£5";
     dessertOne.appendChild(dessertOnePrice);
 
-    const dessertOneImage = gelato;
+    const dessertOneImage = menuImages.gelato;
     dessertOneImage.classList.add("menu-img");
     dessertOne.appendChild(dessertOneImage);
 
