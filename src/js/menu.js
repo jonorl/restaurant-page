@@ -12,10 +12,10 @@ export function menu() {
 
     // Beverages container
     const beveragesContainer = document.createElement("div");
-    beveragesContainer.classList.add("beverages-container");
+    beveragesContainer.classList.add("beveragesContainer");
 
     const beveragesTitle = document.createElement("div");
-    beveragesTitle.classList.add("beverages-title");
+    beveragesTitle.classList.add("beveragesTitle");
     beveragesTitle.textContent = "Beverages";
     beveragesContainer.appendChild(beveragesTitle);
 
@@ -98,10 +98,10 @@ export function menu() {
 
     // Sides container
     const sidesContainer = document.createElement("div");
-    sidesContainer.classList.add("sides-container");
+    sidesContainer.classList.add("sidesContainer");
 
     const sidesTitle = document.createElement("div");
-    sidesTitle.classList.add("sides-title");
+    sidesTitle.classList.add("sidesTitle");
     sidesTitle.textContent = "Sides";
     sidesContainer.appendChild(sidesTitle);
 
@@ -116,7 +116,9 @@ export function menu() {
 
     const sidesOneContent = document.createElement("div");
     sidesOneContent.classList.add("content");
-    sidesOneContent.textContent = "Lettuce, tomatoes, carrots and avocado with balsamic, oil and salt";
+    sidesOneContent.textContent = "Lettuce, tomatoes, carrots and ";
+    sidesOneContent.appendChild(document.createElement("br")); 
+    sidesOneContent.appendChild(document.createTextNode("avocado with balsamic, oil and salt"));
     sidesOne.appendChild(sidesOneContent);
 
     const sidesOnePrice = document.createElement("div");
@@ -159,10 +161,10 @@ export function menu() {
 
     // Mains container
     const mainsContainer = document.createElement("div");
-    mainsContainer.classList.add("mains-container");
+    mainsContainer.classList.add("mainsContainer");
 
     const mainsTitle = document.createElement("div");
-    mainsTitle.classList.add("mains-title");
+    mainsTitle.classList.add("mainsTitle");
     mainsTitle.textContent = "Main Dishes";
     mainsContainer.appendChild(mainsTitle);
 
@@ -270,7 +272,7 @@ export function menu() {
 
     // Desserts container
     const dessertsContainer = document.createElement("div");
-    dessertsContainer.classList.add("desserts-container");
+    dessertsContainer.classList.add("dessertsContainer");
 
     const dessertTitle = document.createElement("div");
     dessertTitle.classList.add("dessert");
@@ -279,7 +281,7 @@ export function menu() {
 
     // Dessert one
     const dessertOne = document.createElement("div");
-    dessertOne.classList.add("dessert-one");
+    dessertOne.classList.add("desserts-one");
 
     const dessertOneTitle = document.createElement("div");
     dessertOneTitle.classList.add("title");
