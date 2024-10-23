@@ -22,6 +22,7 @@
   .top-container, .mid-container, .bottom-container {
     justify-self: center;
     border: 2px solid white;
+    width: 60vh;
     padding: 10px;
   }
   

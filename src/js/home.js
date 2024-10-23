@@ -20,9 +20,9 @@ export function home() {
 
     const quote = document.createElement("div");
     quote.classList.add("quote");
-    quote.textContent = "Jon can only cook like 4 dishes. I guess they're ok"
+    quote.textContent = "Jon can only cook like 4 dishes. I guess"
     quote.appendChild(document.createElement("br")); 
-    quote.appendChild(document.createTextNode(" as long as your expectations are low."));
+    quote.appendChild(document.createTextNode("they're ok as long as your expectations are low."));
     topContainer.appendChild(quote);
 
     const quotedPerson = document.createElement("div");
