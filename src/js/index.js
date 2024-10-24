@@ -18,12 +18,15 @@ topButtons.forEach(topButton => {
         console.log(target.id);
 
         switch(target.id) {
+            
             case "home":
                 home();
                 break;
+
             case "menu":
                 menu();
                 break;
+
             case "about":
                 about();
                 break;
