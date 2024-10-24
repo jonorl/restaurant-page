@@ -15,10 +15,9 @@ topButtons.forEach(topButton => {
 
     topButton.addEventListener("click",(event) => {
         let target = event.target;
-        console.log(target.id);
 
         switch(target.id) {
-            
+
             case "home":
                 home();
                 break;
