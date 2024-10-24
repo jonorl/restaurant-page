@@ -5,24 +5,30 @@ import { home } from "./home.js"
 import { menu } from "./menu.js"
 import { about } from "./about.js"
 
-// Button selectors
-const homeButton = document.querySelector("#home")
-const menuButton = document.querySelector("#menu")
-const aboutButton = document.querySelector("#about")
+// Button selector
 
+const topButtons = document.querySelectorAll("button")
 
-// Event Listeners
-homeButton.addEventListener("click", () => {
-    home();
-});
+// Event Listener
 
-menuButton.addEventListener("click", () => {
-    menu();
-});
+topButtons.forEach(topButton => {
 
-aboutButton.addEventListener("click", () => {
-    about();
-});
+topButton.addEventListener("click",(event) => {
+    let target = event.target;
+    console.log(target.id);
+
+    switch(target.id) {
+        case "home":
+            home();
+            break;
+        case "menu":
+            menu();
+            break;
+        case "about":
+            about();
+            break;
+    }}
+)});
 
 // Console log as requested
 console.log("hello restaurant")
