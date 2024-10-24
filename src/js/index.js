@@ -13,22 +13,23 @@ const topButtons = document.querySelectorAll("button")
 
 topButtons.forEach(topButton => {
 
-topButton.addEventListener("click",(event) => {
-    let target = event.target;
-    console.log(target.id);
+    topButton.addEventListener("click",(event) => {
+        let target = event.target;
+        console.log(target.id);
 
-    switch(target.id) {
-        case "home":
-            home();
-            break;
-        case "menu":
-            menu();
-            break;
-        case "about":
-            about();
-            break;
-    }}
-)});
+        switch(target.id) {
+            case "home":
+                home();
+                break;
+            case "menu":
+                menu();
+                break;
+            case "about":
+                about();
+                break;
+        }
+    })
+});
 
 // Console log as requested
 console.log("hello restaurant")
